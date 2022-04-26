@@ -1,0 +1,3 @@
+bash build.sh blue felipeschirmann 1.0.0
+docker run -d --name ngnix-alpine-curl-01 -p 80:80  ngnix-alpine-curl-hostname-blue-$(uname -m):latest
+docker exec -it ngnix-alpine-curl-01 sh
